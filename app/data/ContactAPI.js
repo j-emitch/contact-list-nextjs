@@ -9,8 +9,8 @@ export const ContactAPI = {
 	},
 
   addContact: function ({ name, image, email, phone }) {
-    const generateId = Math.round(Math.random() * 100000000);
-		this.contacts.push({ generateId, name, image, email, phone });
+    const id = Math.round(Math.random() * 100000000);
+		this.contacts.push({ id, name, image, email, phone });
 	},
 
 	get: function (id) {
